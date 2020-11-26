@@ -1,0 +1,490 @@
+/*genral style*/
+
+*
+{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body
+{
+	font-family: arial, tahoma, sans-serif;
+}
+
+a { color: #000; text-decoration: none; }
+
+ul { list-style: none; }
+
+
+@font-face {
+
+  font-family: AmaticSC-Regular;
+  src: url(../fonts/AmaticSC-Regular.ttf);
+}
+
+@font-face {
+
+  font-family: Cormorant-Regular;
+  src: url(../fonts/Cormorant-Regular.ttf);
+}
+
+.container
+{
+	width: 75%;
+	margin: 0 auto;
+}
+
+.btn
+{
+	color: #fff;
+	font-size: 17px;
+	padding: 10px 15px;
+	border-radius: 30px;
+	display: inline-block;
+	background-color: #81AE45;
+	border: 2px solid #81AE45;
+	text-transform: capitalize;
+}
+
+.btn:hover
+{
+	color: #81AE45;
+	background: none;
+	border: 2px solid #81AE45;
+}
+
+/*cont-det*/
+
+.cont-det
+{
+	padding: 7px 0;
+	background-color: #81AE45;
+}
+
+.cont-det .container 
+{
+	display: flex;
+	flex-flow: row;
+	justify-content: space-between;
+}
+
+.cont-det .item i,
+.cont-det .item p { color: #fff; display: inline-block; }
+
+.cont-det .item i { font-size: 14px; padding: 4px; }
+
+.cont-det .item p { font-size: 14px; }
+
+/*header*/
+
+header .container
+{
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-between;
+}
+
+header .logo a
+{
+	display: block;
+	color: #81AE45;
+	padding: 20px 0;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: uppercase;
+}
+
+header label
+{
+	color: #fff;
+	float: right;
+	display: block;
+	font-size: 30px;
+	margin-top: 17px;
+}
+
+header label:hover { cursor: pointer; }
+
+
+header input, header label { display: none; }
+
+header input:checked ~ nav { display: block; }
+
+header nav > ul { display: flex }
+
+header nav > ul > li > a
+{
+	color: #555;
+	display: block;
+	font-size: 14px;
+	padding: 20px 15px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+header nav > ul > li > a i { font-size: 15px; }
+
+header nav ul > li ul li { display: block; }
+
+header nav ul > li ul li a 
+{ 
+	color: #555;
+	display: block;
+	padding: 12px 15px;
+	background-color: #fff
+}
+
+header nav ul li.nist-list-dad
+{
+	position: relative;
+}
+
+header nav ul li.nist-list-dad .nist-list 
+{
+	position: absolute;
+	top: 40px;
+	left: 0;
+	opacity: 0;
+	visibility: hidden;
+	transition: opacity 0.5s, visibility 0.5s, top 0.5s;
+}
+
+header nav ul li.nist-list-dad:hover .nist-list
+{
+	top: 60px;
+	opacity: 1;
+	z-index: 4;
+	visibility: visible;
+}
+
+/*home*/
+
+.home
+{
+	height: 45vh;
+	position: relative;
+	background-size: cover;
+	background-position: 100%;
+	background-image: url(../images/category/category-1.jpg); 
+}
+
+.home div
+{
+	color: #fff;
+	text-align: center;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.home div p { font-size: 15px; margin-bottom: 10px; text-transform: uppercase; }
+
+.home div h2
+{
+	font-size: 40px;
+	text-transform: uppercase;
+}
+
+/*cart-products*/
+
+.products-wishlist
+{
+	padding: 100px 0;
+	border-bottom: 1px solid #eee;
+}
+
+.products-wishlist .header
+{
+	background-color: #82AE46;
+}
+
+.products-wishlist .header ul
+{
+	display: flex;
+}
+
+.products-wishlist .header ul li
+{
+	color: #fff;
+	font-weight: bold;
+	padding: 23px 40px;
+	text-align: center;
+	border-left: 1px solid #eee3;
+}
+
+.products-wishlist .header ul li:first-of-type
+{
+	width: 30%;
+	border-left: 0;
+}
+
+.products-wishlist .header ul li:nth-of-type(2),
+.products-wishlist .item .product-desc
+{
+	width: 30%;
+}
+
+.products-wishlist .header ul li:nth-of-type(3),
+.products-wishlist .header ul li:last-of-type,
+.products-wishlist .item .price,
+.products-wishlist .item .total
+{
+	width: 10%;
+}
+
+.products-wishlist .header ul li:nth-of-type(4),
+.products-wishlist .item .quantity
+{
+	width: 20%;
+}
+
+.products-wishlist .item
+{
+	display: flex;
+	padding: 40px 0;
+	text-align: center;
+	border-bottom: 1px solid #eee9;
+}
+
+.products-wishlist .item .close
+{
+	width: 10%;
+}
+
+.products-wishlist .item .close i 
+{
+	color: #aaa;
+	font-size: 23px;
+	line-height: 120px;
+}
+
+.products-wishlist .item .close i:hover
+{
+	color: #82AE46;
+	cursor: pointer;
+}
+
+.products-wishlist .item .img
+{
+	width: 20%;
+}
+
+.products-wishlist .item .img img
+{
+	width: 60%;
+}
+
+.products-wishlist .item .product-desc h4
+{
+	color: #444;
+	margin-bottom: 10px;
+}
+
+.products-wishlist .item .product-desc p
+{
+	color: #aaa;
+	line-height: 1.5;
+	font-weight: bold;
+}
+
+.products-wishlist .item .price span,
+.products-wishlist .item .total span
+{
+	color: #444;
+	font-weight: bold;
+	line-height: 120px;
+}
+
+.products-wishlist .item .quantity { padding-top: 40px; }
+
+.products-wishlist .item .quantity input
+{
+	width: 80%;
+	outline: none;
+	font-size: 16px;
+	font-weight: bold;
+	padding: 7px;
+	text-align: center;
+	border: 1px solid #bbb;
+	border-top: 0;
+}
+
+/*subcribe*/
+
+.subcribe
+{
+	padding: 90px 0;
+	position: relative;
+	background-color: #F7F6F2;
+}
+
+.subcribe .sub_part
+{
+	display: flex;
+}
+
+.subcribe .sub_part div
+{
+	width: 50%;
+}
+
+.subcribe .sub_part div h3
+{
+	font-weight: normal;
+	font-size: 23px;
+	margin-bottom: 10px;
+}
+
+.subcribe .sub_part div p
+{
+	color: #999;
+	font-weight: bold;
+}
+
+.subcribe .sub_part div:nth-of-type(2)
+{
+	display: flex;
+	background-color: #fff
+}
+
+.subcribe .sub_part div:nth-of-type(2) input
+{
+	all: unset;
+	width: 80%;
+	height: 100%;
+	padding: 0 20px;
+	font-size: 17px;
+	outline: none;
+	color: #666;
+}
+
+.subcribe .sub_part div:nth-of-type(2) button
+{
+	all: unset;
+	width: 20%;
+	height: 100%;
+	background-color: #81AE45;
+	text-align: center;
+	color: #fff;
+}
+
+.subcribe .sub_part div:nth-of-type(2) button:hover
+{
+	cursor: pointer;
+}
+
+.subcribe .up
+{
+	padding: 15px 19px;
+	position: absolute;
+	left: 50%;
+	bottom: 0;
+	border-radius: 60%;
+	display: inline-block;
+	background-color: #81AE45;
+	transform: translate(-50%, 50%);
+}
+
+.subcribe .up i
+{
+	color: #fff;
+	display: block;
+	font-size: 23px;
+	position: relative;
+	top: 0;
+	animation: moveUp 0.8s infinite;
+}
+
+@keyframes moveUp
+{
+	to
+	{
+		top: -8px;
+	}
+}
+
+
+/*details*/
+
+.details
+{
+	padding: 140px 0;
+}
+
+.details .details_content
+{
+	display: flex;
+	justify-content: space-between;
+}
+
+.details .details_content div
+{
+	width: 23%
+}
+
+.details .details_content div h4
+{
+	font-size: 22px;
+	font-weight: normal;
+	margin-bottom: 20px;
+}
+
+.details .details_content div.about_site p
+{
+	line-height: 1.6;
+	font-weight: bold;
+	margin-bottom: 70px;
+}
+
+.details .details_content div.about_site ul
+{
+	display: flex;
+}
+
+.details .details_content div.about_site ul li
+{
+	font-size: 28px;
+	margin: 0 20px;
+}
+
+.details .details_content div.sections ul li,
+.details .details_content div.help ul li
+{
+	font-weight: bold;
+	margin-bottom: 15px;
+}
+
+.details .details_content div.help ul li span
+{
+	padding-left: 20px;
+}
+
+.details .details_content div.question ul li
+{
+	font-weight: bold;
+}
+
+.details .details_content div.question ul li
+{
+	padding-left: 30px;
+	margin-bottom: 15px;
+	position: relative;
+}
+
+.details .details_content div.question ul li i
+{
+	position: absolute;
+	top: 2px;
+	left: 0;
+}
+
+
+footer
+{
+	padding: 60px;
+	text-align: center;
+}
+
+footer p { font-weight: bold; }

@@ -1,0 +1,132 @@
+@media ( max-width: 500px )
+{
+	.cont-det { display: none; }
+
+	header label { display: block; color: #81AE45 }
+
+	header nav
+	{
+		width: 45%;
+		z-index: 2;
+		position: absolute;
+		right: 0;
+		top: 67px;
+		display: none;
+		background-color: #81AE45;
+		transition: opacity 0.5s, visibility 0.5s;
+	}
+
+	header nav ul { flex-flow: column; }
+
+	header nav ul li a { color: #fff; }
+
+	/*home*/
+
+	.home div h2 { font-size: 35px; }
+
+	/*contact*/
+
+	.contact .contact-det { flex-flow: column; }
+
+	.contact .contact-det .item { width: 100%; margin-bottom: 20px; }
+
+	/*user-info*/
+
+	.contact .user-info { flex-flow: column; }
+
+	.contact .user-info div { width: 100%; margin-bottom: 20px; }
+
+	/*details*/
+
+	.details { padding: 100px 0 20px; }
+
+	.details .details_content { flex-flow: column; }
+
+	.details .details_content div { width: 100%; margin-bottom: 40px; }
+}
+
+@media ( min-width: 501px ) and ( max-width: 768px )
+{
+	.cont-det { display: none; }
+
+	header label { display: block; color: #81AE45 }
+
+	header nav
+	{
+		width: 45%;
+		z-index: 2;
+		position: absolute;
+		right: 0;
+		top: 67px;
+		display: none;
+		background-color: #81AE45;
+		transition: opacity 0.5s, visibility 0.5s;
+	}
+
+	header nav ul { flex-flow: column; }
+
+	header nav ul li a { color: #fff; }
+
+	/*contact*/
+
+	.contact .contact-det .item { width: 45%; margin-bottom: 20px; }
+
+	/*user-info*/
+
+	.contact .user-info { justify-content: space-around; }
+
+	.contact .user-info div { width: 80%; margin-bottom: 20px; }
+
+	/*details*/
+
+	.details { padding: 100px 0 20px; }
+
+	.details .details_content div { width: 45%; margin-bottom: 40px; }
+
+}
+
+@media ( min-width: 769px ) and ( max-width: 992px )
+{
+	.cont-det { display: none; }
+
+	header label { display: block; color: #81AE45 }
+
+	header nav
+	{
+		width: 45%;
+		z-index: 2;
+		position: absolute;
+		right: 0;
+		top: 67px;
+		display: none;
+		background-color: #81AE45;
+		transition: opacity 0.5s, visibility 0.5s;
+	}
+
+	header nav ul { flex-flow: column; }
+
+	header nav ul li a { color: #fff; }
+
+	/*contact*/
+
+	.contact .contact-det { justify-content: space-around; }
+
+	.contact .contact-det .item { width: 30%; margin-bottom: 20px; }
+
+	/*user-info*/
+
+	.contact .user-info { justify-content: space-around; }
+
+	.contact .user-info div { width: 80%; margin-bottom: 20px; }
+
+	/*details*/
+
+	.details { padding: 100px 0 20px; }
+
+	.details .details_content div { width: 45%; margin-bottom: 40px; }
+}
+
+@media ( min-width: 993px ) and ( max-width: 1200px )
+{
+	.contact .user-info div { width: 49% }
+}
